@@ -3,17 +3,10 @@ info:
   title: onboarding-open-api
   version: '3.1'
 servers:
-  - url: http://apigw-sscc-des.axdesocp1.central.inditex.grp
-    description: SSCC Server
-  - url: http://apigw-comercial-des.axdesocp1.central.inditex.grp
-    description: Comercial Server
-  - url: http://apigw-tiendas-des.axdesocp1.central.inditex.grp
-    description: Tiendas Server
-  - url: http://apigw-logistica-des.axdesocp1.central.inditex.grp
-    description: Logistica Server
+  - url: http://jsonplaceholder.typicode.com
 paths:
-  "":
-    post:
+  /posts:
+    get:
       operationId: onboarding-operation-id
       responses:
         200:
