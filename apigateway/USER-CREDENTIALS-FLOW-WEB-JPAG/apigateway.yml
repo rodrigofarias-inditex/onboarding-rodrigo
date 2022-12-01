@@ -7,10 +7,11 @@ definition:
   security_validation_ticket: APPSECSER-000 # ???? External and Outbound APIs needs an OSD Jira Ticket 
   service:
     name: "{{.projectkey}}_{{.tenant}}_project"
-    path: {{.api.target_path}} # Defined in config/api* files
+    path: {{.api.target_path}} # ???? Defined in config/api* files
     auth_type: itx-user-auth
-    context: /{{.projectkey}}/project
+    context: /{{.projectkey}}
     match:
       routes:
-        - operationId: onboardingSampleOperation
-        - operationId: otherSampleOperation
+        - operationId: onboarding-operation-id
+    plugins:
+    - name: user-credential-flow-web
