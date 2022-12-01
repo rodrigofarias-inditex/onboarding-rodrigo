@@ -5,16 +5,16 @@ info:
 servers:
   - url: http://apigw-sscc-des.axdesocp1.central.inditex.grp
     description: SSCC Server
-  - url: 'apigw-comercial-des.axdesocp1.central.inditex.grp'
+  - url: http://apigw-comercial-des.axdesocp1.central.inditex.grp
     description: Comercial Server
-  - url: apigw-tiendas-des.axdesocp1.central.inditex.grp'
+  - url: http://apigw-tiendas-des.axdesocp1.central.inditex.grp
     description: Tiendas Server
-  - url: 'apigw-logistica-des.axdesocp1.central.inditex.grp'
+  - url: http://apigw-logistica-des.axdesocp1.central.inditex.grp
     description: Logistica Server
 paths:
   "":
     post:
-      operationId: authenticate
+      operationId: onboarding-operation-id
       responses:
         200:
           description: 'OK'

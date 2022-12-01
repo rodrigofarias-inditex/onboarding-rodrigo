@@ -1,6 +1,6 @@
 definition:
   api:
-    spec: "./sample_api.yml" # change it
+    spec: "https://raw.githubusercontent.com/rodrigofarias-inditex/onboarding-rodrigo/main/apigateway/USER-CREDENTIALS-FLOW-WEB-JPAG/sample_api.yml"
     repository: "https://github.com/rodrigofarias-inditex/onboarding-rodrigo.git"
     branch: "master"
   workspace: EXTERNAL
