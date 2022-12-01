@@ -1,0 +1,20 @@
+openapi: '3.0.2'
+info:
+  title: onboarding-open-api
+  version: '3.1'
+servers:
+  - url: http://apigw-sscc-des.axdesocp1.central.inditex.grp
+    description: SSCC Server
+  - url: 'apigw-comercial-des.axdesocp1.central.inditex.grp'
+    description: Comercial Server
+  - url: apigw-tiendas-des.axdesocp1.central.inditex.grp'
+    description: Tiendas Server
+  - url: 'apigw-logistica-des.axdesocp1.central.inditex.grp'
+    description: Logistica Server
+paths:
+  "":
+    post:
+      operationId: authenticate
+      responses:
+        200:
+          description: 'OK'

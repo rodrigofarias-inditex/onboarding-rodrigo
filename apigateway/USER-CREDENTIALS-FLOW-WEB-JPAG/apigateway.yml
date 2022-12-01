@@ -1,0 +1,16 @@
+definition:
+  api:
+    spec: "./sample_api.yml" # change it
+    repository: "https://github.com/rodrigofarias-inditex/onboarding-rodrigo.git"
+    branch: "master"
+  workspace: EXTERNAL
+  security_validation_ticket: APPSECSER-000 # ???? External and Outbound APIs needs an OSD Jira Ticket 
+  service:
+    name: "{{.projectkey}}_{{.tenant}}_project"
+    path: {{.api.target_path}} # Defined in config/api* files
+    auth_type: itx-user-auth
+    context: /{{.projectkey}}/project
+    match:
+      routes:
+        - operationId: onboardingSampleOperation
+        - operationId: otherSampleOperation

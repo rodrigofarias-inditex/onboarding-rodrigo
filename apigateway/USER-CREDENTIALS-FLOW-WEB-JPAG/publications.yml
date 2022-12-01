@@ -1,0 +1,8 @@
+supraenvironments:
+  - name: des
+    environments:
+      - name: des
+        platforms:
+          - name: [ssccarteixo|comercialarteixo|logisticaarteixo|tiendasarteixo]
+            tenants:
+              - name: global
