@@ -1,10 +1,9 @@
 definition:
   api:
-    spec: "https://raw.githubusercontent.com/rodrigofarias-inditex/onboarding-rodrigo/main/apigateway/sample_api.yml"
+    spec: "./sample_api.yml"
     repository: "https://github.com/rodrigofarias-inditex/onboarding-rodrigo.git"
     branch: "master"
-  workspace: EXTERNAL
-  security_validation_ticket: APPSECSER-000 # ???? External and Outbound APIs needs an OSD Jira Ticket 
+  workspace: INTERNAL
   service:
     name: "{{.projectkey}}_{{.tenant}}_project".
     path: /
