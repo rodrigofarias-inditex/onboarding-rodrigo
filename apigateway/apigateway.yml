@@ -12,7 +12,4 @@ definition:
     context: /{{.projectkey}}
     match:
       routes:
-        - operationId: sscc-operation-id
-        - operationId: comercial-operation-id
-        - operationId: tiendas-operation-id
-        - operationId: logistica-operation-id
+        - operationId: get-posts-id

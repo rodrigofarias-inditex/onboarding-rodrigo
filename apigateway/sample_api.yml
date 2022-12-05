@@ -1,0 +1,15 @@
+openapi: '3.0.2'
+info:
+  title: jsonplaceholder-open-api
+  version: '3.1'
+servers:
+  - url: https://jsonplaceholder.typicode.com
+    description: Json Placeholder
+
+paths:
+  /posts:
+    get:
+      operationId: get-posts-id
+      responses:
+        200:
+          description: 'OK'
